@@ -40,7 +40,7 @@ public class App {
 
         }
 
-        scanner.close();
+
     }
 
     private static void cadastrarFuncionario() {

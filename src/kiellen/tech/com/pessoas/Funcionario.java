@@ -32,7 +32,7 @@ public class Funcionario extends Pessoa {
 
         System.out.println("Digite a matrícula do funcionário: ");
         this.matricula = scanner.nextInt();
-        scanner.nextLine(); // Consumir o "enter" deixado pelo nextInt()
+        scanner.nextLine();
 
         System.out.println("Digite a profissão do funcionário (ex.: ENGENHEIRO, MEDICO, PROFESSOR): ");
         try {
@@ -44,6 +44,8 @@ public class Funcionario extends Pessoa {
 
         System.out.println("Digite o salário do funcionário: ");
         this.salario = scanner.nextDouble();
+
+
     }
 
     @Override

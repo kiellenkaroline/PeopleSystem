@@ -32,7 +32,6 @@ public class Pessoa {
         this.endereco.cadastrar();
         this.telsContato = new Telefone();
         this.telsContato.cadastrar();
-
     }
 
     public int obterIdade(){
