@@ -35,6 +35,7 @@ public class Cliente extends Pessoa{
             this.tipoProfissaoOutros = leitor.nextLine();
         }
 
+
     }
 
     public String toString(){

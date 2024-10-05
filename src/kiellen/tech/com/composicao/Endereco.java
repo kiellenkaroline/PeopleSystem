@@ -60,7 +60,9 @@ public class Endereco {
         this.estado = leitor.nextLine();
         System.out.println("Informe o Pais: ");
         this.pais = leitor.nextLine();
+
     }
+
 
 
 }
