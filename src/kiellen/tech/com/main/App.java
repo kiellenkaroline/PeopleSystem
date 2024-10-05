@@ -2,9 +2,8 @@ package kiellen.tech.com.main;
 
 import kiellen.tech.com.pessoas.Cliente;
 import kiellen.tech.com.pessoas.Funcionario;
-
-
 import java.util.Scanner;
+import java.util.List;
 
 public class App {
 
@@ -17,6 +16,7 @@ public class App {
             System.out.println("1. Cadastrar Cliente");
             System.out.println("2. Cadastrar Funcionário");
             System.out.println("3. Sair");
+            System.out.println("4. Reajustar Salario");
             System.out.println("Escolha uma opção: ");
 
             String opcao = scanner.nextLine();
@@ -48,6 +48,26 @@ public class App {
         Funcionario funcionario = new Funcionario();
         funcionario.cadastrar();
         System.out.println(funcionario);
+    }
+
+    private static void reajustarSalario(List<Funcionario> funcionarios) {
+        System.out.println("==== Reajuste Salarial ==== ");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o nome do funcionário: ");
+        String nomeParaReajuste = scanner.nextLine();
+
+        for (Funcionario funcionario : funcionarios) {
+            if (funcionario.getNome().equals(nomeParaReajuste)) { // Comparando o nome
+                System.out.print("Digite o percentual de reajuste: ");
+                double percentual = scanner.nextDouble();
+                funcionario.reajustarSalario(percentual);
+                System.out.println("Salário reajustado com sucesso!");
+                return;
+            }
+        }
+
+        System.out.println("Funcionário não encontrado.");
     }
 
     public static void cadastrarCliente() {
