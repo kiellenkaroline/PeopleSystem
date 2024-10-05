@@ -1,5 +1,6 @@
 package kiellen.tech.com.pessoas;
 
+import kiellen.tech.com.composicao.Cargo;
 import kiellen.tech.com.composicao.Profissao;
 
 import java.time.LocalDate;
@@ -87,5 +88,20 @@ public class Funcionario extends Pessoa {
     public void setDataAdmissao(LocalDate dataAdmissao) {
         this.dataAdmissao = dataAdmissao;
     }
+
+    public void reajustarSalario(double percentual) {double valorReajuste = salario * (percentual / 100);
+        salario += valorReajuste;}
+
+    public void promover(Cargo novoCargo) {Cargo Cargo = novoCargo;
+    }
+
+    public void imprimirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Profissao:" + profissao);
+        System.out.println("Salário: " + salario);
+
+
+    }
+
 }
 
