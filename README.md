@@ -1,5 +1,5 @@
 # People System
-## 👨🏼‍💻 Membros desevolvedores do projeto:
+## 👨🏼‍💻 Membros desenvolvedores do projeto:
 
 - André Moreira, Kellyanne Karen, Kiellen Karoline, Layse Bruna e Tomaz Panta.
 
