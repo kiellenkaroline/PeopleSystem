@@ -60,38 +60,47 @@ public class Funcionario extends Pessoa {
 
 
     public Profissao getProfissao() {
+
         return profissao;
     }
 
     public void setProfissao(Profissao profissao) {
+
         this.profissao = profissao;
     }
 
     public double getSalario() {
+
         return salario;
     }
 
     public void setSalario(double salario) {
+
         this.salario = salario;
     }
 
     public int getMatricula() {
+
         return matricula;
     }
 
     public void setMatricula(int matricula) {
+
         this.matricula = matricula;
     }
 
     public LocalDate getDataAdmissao() {
+
         return dataAdmissao;
     }
 
     public void setDataAdmissao(LocalDate dataAdmissao) {
+
         this.dataAdmissao = dataAdmissao;
     }
 
-    public void reajustarSalario(double percentual) {double valorReajuste = salario * (percentual / 100);
+    public void reajustarSalario(double percentual) {
+        double valorReajuste = salario * (percentual / 100);
         salario += valorReajuste;}
 
     public void promover(Cargo novoCargo) {Cargo Cargo = novoCargo;
