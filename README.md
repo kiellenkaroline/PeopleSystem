@@ -3,7 +3,7 @@
 
 - André Moreira, Kellyanne Karen, Kiellen Karoline, Layse Bruna e Tomaz Panta.
 
-## Linguagem e tecnologia utilizada:
+## Linguagem e tecnologias utilizadas:
 
 [![habilidades](https://skillicons.dev/icons?i=java,mysql,idea,spring)](skillicons.dev)
 
