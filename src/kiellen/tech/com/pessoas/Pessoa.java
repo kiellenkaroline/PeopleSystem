@@ -15,6 +15,7 @@ public class Pessoa {
     private Telefone telsContato;
 
 
+
     private Scanner leitor = new Scanner(System.in);
 
     public void cadastrar() {
@@ -65,4 +66,13 @@ public class Pessoa {
     public void setEndereco(Endereco endereco){
         this.endereco = endereco;
     }
+
+    public Telefone getTelsContato() {
+        return telsContato;
+    }
+
+    public void setTelsContato(Telefone telsContato) {
+        this.telsContato = telsContato;
+    }
 }
+
